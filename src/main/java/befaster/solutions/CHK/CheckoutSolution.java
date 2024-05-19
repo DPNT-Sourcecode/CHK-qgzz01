@@ -44,7 +44,7 @@ public class CheckoutSolution {
         	    count_f++;
         	    break;
         	default:
-        		return -1; //oops
+        		return -1;
         	
         	}
         }
@@ -76,17 +76,22 @@ public class CheckoutSolution {
             count_b=count_b-count_pb*2;
         }
         
-        if(count_f>=2)
-            count_f=count_f-count_f/2+1;// ???????//
-        
+        if(count_f>2)
+        {
+            if(count_f==3)
+                count_f--;
+            else
+                count_f=count_f-(count_f/2-1);
+                
+        }
     
                     
             
         sum = sum+count_a*50+count_pa1*130+count_pa2*200+count_pb*45+count_b*30+count_c*20+count_d*15+count_e*40+count_f*10;
         
         
-        
         return sum;
     }
         
 }
+
