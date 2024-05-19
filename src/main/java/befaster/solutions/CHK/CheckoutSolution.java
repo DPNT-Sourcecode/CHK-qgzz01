@@ -34,9 +34,9 @@ public class CheckoutSolution {
         if(count_a>=3)
         {
         	if(count_b>=2)
-        		sum=sum+(count_a/3)*130+(count_b/2)*45+count_c*20+count_d*15;
+        		sum=sum+(count_a/3)*130+(count_a%3)*50+(count_b/2)*45+(count_b%2)*30+count_c*20+count_d*15;
         	else
-        		sum=sum+(count_a/3)*130+count_b*30+count_c*20+count_d*15;
+        		sum=sum+(count_a/3)*130+(count_a%3)*50+count_b*30+count_c*20+count_d*15;
         }
         else
         	sum=sum+count_a*50+count_b*45+count_c*20+count_d*15;
@@ -46,4 +46,5 @@ public class CheckoutSolution {
     }
         
 }
+
 
