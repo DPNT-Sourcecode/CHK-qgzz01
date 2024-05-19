@@ -106,7 +106,7 @@ public class CheckoutSolution {
         	    count_z++;
         	    break;
         	default:
-        		System.out.println("no");
+        		return -1;
         	
         	}
         }
@@ -212,4 +212,3 @@ public class CheckoutSolution {
     }
         
 }
-
