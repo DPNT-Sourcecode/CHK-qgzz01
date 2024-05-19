@@ -44,7 +44,7 @@ public class CheckoutSolution {
         	    count_f++;
         	    break;
         	default:
-        		System.out.println("no");
+        		return -1; //oops
         	
         	}
         }
@@ -89,4 +89,5 @@ public class CheckoutSolution {
     }
         
 }
+
 
