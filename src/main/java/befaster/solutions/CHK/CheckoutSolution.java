@@ -77,7 +77,7 @@ public class CheckoutSolution {
         }
         
         if(count_f>=2)
-            count_f=count_f-count_f/2+1;
+            count_f=count_f-count_f/2+1; // ???????//
     
                     
             
@@ -89,6 +89,7 @@ public class CheckoutSolution {
     }
         
 }
+
 
 
 
