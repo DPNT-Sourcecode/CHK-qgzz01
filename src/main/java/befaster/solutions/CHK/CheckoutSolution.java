@@ -19,6 +19,9 @@ public class CheckoutSolution {
     	int count_e=0;
     	int count_pe=0;
     	
+    	int count_f=0;
+
+    	
     	
         for( int i=0; i<skus.length();i++) {
         	switch(skus.charAt(i)) {
@@ -37,8 +40,11 @@ public class CheckoutSolution {
         	case 'E':
         	    count_e++;
         	    break;
+        	case 'F':
+        	    count_f++;
+        	    break;
         	default:
-        		return -1;
+        		System.out.println("no");
         	
         	}
         }
@@ -69,10 +75,13 @@ public class CheckoutSolution {
             count_pb=count_pb+count_b/2;
             count_b=count_b-count_pb*2;
         }
+        
+        if(count_f>=2)
+            count_f=count_f-count_f/2;
     
                     
             
-        sum = sum+count_a*50+count_pa1*130+count_pa2*200+count_pb*45+count_b*30+count_c*20+count_d*15+count_e*40;
+        sum = sum+count_a*50+count_pa1*130+count_pa2*200+count_pb*45+count_b*30+count_c*20+count_d*15+count_e*40+count_f*10;
         
         
         
@@ -80,3 +89,4 @@ public class CheckoutSolution {
     }
         
 }
+
